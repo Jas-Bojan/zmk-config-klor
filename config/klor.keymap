@@ -77,7 +77,7 @@
 
         lower_layer {
             bindings = <
-        &trans        &trans        &mo 5           &trans     &trans                  &trans         &kp PAGE_UP     &kp UP_ARROW    &trans           &trans
+        &trans        &trans        &mo 5           &trans     &trans                  &kp TAB        &kp PAGE_UP     &kp UP_ARROW    &trans           &trans
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &trans                  &kp HOME       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans
 &trans  &trans        &trans        &trans          &trans     &trans  &trans  &trans  &trans         &kp PAGE_DOWN   &trans          &trans           &trans   &trans
                                     &trans          &trans     &trans  &trans  &mo 3   &kp BACKSPACE  &trans          &kp DELETE
