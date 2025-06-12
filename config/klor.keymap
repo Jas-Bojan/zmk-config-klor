@@ -68,7 +68,7 @@
             bindings = <
             &kp Q  &kp W  &kp F      &kp P        &kp G                                               &kp J          &kp L        &kp U       &kp Y    &kp SEMI
 &kp TAB     &kp A  &kp R  &kp S      &kp T        &kp D                                               &kp H          &kp N        &kp E       &kp I    &kp O      &kp SQT
-&kp ESCAPE  &kp Z  &kp X  &kp C      &kp V        &kp B           &kp K_PLAY_PAUSE  &kp C_PLAY_PAUSE  &kp K          &kp M        &kp COMMA   &kp DOT  &kp SLASH  &kp GRAVE
+&kp ESCAPE  &kp Z  &kp X  &kp C      &kp V        &kp B           &kp C_PLAY_PAUSE  &kp C_PLAY_PAUSE  &kp K          &kp M        &kp COMMA   &kp DOT  &kp SLASH  &kp GRAVE
                           &kp LCTRL  &lt 1 SPACE  &kp LEFT_SHIFT  &kp LALT          &kp LGUI          &kp BACKSPACE  &lt 2 ENTER  &kp DELETE
             >;
 
@@ -125,8 +125,8 @@
 
         mod_layer {
             bindings = <
-        &trans  &trans  &kp C_VOLUME_UP    &kp K_PREV  &trans                            &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp K_NEXT  &kp K_PLAY_PAUSE                  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &kp C_VOLUME_UP    &kp C_PREV  &trans                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_PREV  &kp C_PLAY_PAUSE                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans             &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans             &trans      &trans            &trans  &trans  &trans  &trans  &trans
             >;
