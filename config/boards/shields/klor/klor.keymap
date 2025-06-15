@@ -19,10 +19,18 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+
 #define BASE   0
-#define LOWER  1
-#define RAISE  2
-#define ADJUST 3
+#define NAV  1
+#define NUMSYM  2
+#define FUNC 3
+#define MEDMOD 4
+#define ADJUST 5
+#define MOUSE 6
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 
 
 / {
