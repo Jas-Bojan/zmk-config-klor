@@ -69,27 +69,39 @@
             &kp Q  &kp W  &kp F      &kp P        &kp G                                               &kp J          &kp L        &kp U      &kp Y    &kp SEMI
 &kp TAB     &kp A  &kp R  &kp S      &kp T        &kp D                                               &kp H          &kp N        &kp E      &kp I    &kp O      &kp SQT
 &kp ESCAPE  &kp Z  &kp X  &kp C      &kp V        &kp B           &kp C_PLAY_PAUSE  &kp C_PLAY_PAUSE  &kp K          &kp M        &kp COMMA  &kp DOT  &kp SLASH  &kp GRAVE
-                          &kp LCTRL  &lt 2 SPACE  &kp LEFT_SHIFT  &kp LALT          &kp LGUI          &kp BACKSPACE  &lt 1 ENTER  &kp RCTRL
+                          &kp LCTRL  &lt 3 SPACE  &kp LEFT_SHIFT  &kp LALT          &kp LGUI          &kp BACKSPACE  &lt 2 ENTER  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        lower_layer {
+        qwerty_layer {
+            label = "QWERTY_BASE";
             bindings = <
-        &trans        &trans        &mo 5           &trans     &trans                  &kp TAB   &kp PAGE_UP     &kp UP_ARROW    &kp BACKSPACE    &kp DEL
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &trans                  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans
-&trans  &trans        &trans        &trans          &trans     &trans  &trans  &trans  &trans    &kp PAGE_DOWN   &trans          &trans           &trans   &trans
-                                    &mo 3           &trans     &trans  &trans  &trans  &trans    &trans          &trans
+         &kp Q  &kp W  &kp E      &kp R        &kp T                                               &kp Y          &kp U        &kp I      &kp O    &kp P
+&kp TAB  &kp A  &kp S  &kp D      &kp F        &kp G                                               &kp H          &kp J        &kp K      &kp L    &kp SEMI   &kp APOS
+&kp ESC  &kp Z  &kp X  &kp C      &kp V        &kp B           &kp C_PLAY_PAUSE  &kp C_PLAY_PAUSE  &kp N          &kp M        &kp COMMA  &kp DOT  &kp SLASH  &kp GRAVE
+                       &kp LCTRL  &lt 3 SPACE  &kp LEFT_SHIFT  &kp LALT          &kp LGUI          &kp BACKSPACE  &lt 2 ENTER  &kp RCTRL
             >;
 
-            label = "LOWER";
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        raise_layer {
+        nav_layer {
+            bindings = <
+        &trans        &trans        &mo 6           &trans     &trans                  &kp TAB   &kp PAGE_UP     &kp UP_ARROW    &kp BACKSPACE    &kp DEL
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &trans                  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans
+&trans  &trans        &trans        &trans          &trans     &trans  &trans  &trans  &trans    &kp PAGE_DOWN   &trans          &trans           &trans   &trans
+                                    &mo 4           &trans     &trans  &trans  &trans  &trans    &trans          &trans
+            >;
+
+            label = "NAV";
+        };
+
+        numsym_layer {
             // ┌───────────────────────────────────────────────────────────┐
 
-            label = "RAISE";
+            label = "NUMSYM";
 
             // └───────────────────────────────────────────────────────────┘
             /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
@@ -106,7 +118,7 @@
             &kp CARET        &kp AT_SIGN    &kp HASH          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PLUS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
 &kp DOLLAR  &kp EXCLAMATION  &kp AMPERSAND  &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE                        &kp EQUAL        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK   &kp KP_DOT
 &kp SLASH   &kp UNDER        &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH  &kp PERCENT
-                                            &trans            &trans                &trans                 &trans  &trans  &kp RIGHT_SHIFT  &trans           &mo 4
+                                            &trans            &trans                &trans                 &trans  &trans  &kp RIGHT_SHIFT  &trans           &mo 5
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -125,13 +137,13 @@
 
         mod_layer {
             bindings = <
-        &trans  &trans  &kp C_VOLUME_UP    &kp C_PREV  &trans                            &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_NEXT  &kp C_PLAY_PAUSE                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans             &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &kp C_VOLUME_UP    &kp C_PREV  &trans                            &trans  &trans  &trans  &kp LS(LC(KP_MINUS))  &trans
+&trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_NEXT  &kp C_PLAY_PAUSE                  &trans  &trans  &trans  &trans                &trans  &trans
+&trans  &trans  &trans  &trans             &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans
                         &trans             &trans      &trans            &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "MODS";
+            label = "MEDMOD";
         };
 
         adjust_layer {
