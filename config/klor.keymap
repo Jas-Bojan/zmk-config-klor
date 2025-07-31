@@ -48,6 +48,24 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        fig_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <14 13>;
+            layers = <8>;
+        };
+
+        fig_L {
+            bindings = <&kp L>;
+            key-positions = <3 4>;
+            layers = <8>;
+        };
+
+        fig_group {
+            bindings = <&kp LC(G)>;
+            key-positions = <2 3>;
+            layers = <8>;
+        };
     };
 
     macros {
