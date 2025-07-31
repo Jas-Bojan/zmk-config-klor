@@ -66,6 +66,11 @@
             key-positions = <2 3>;
             layers = <8>;
         };
+
+        fig_del {
+            bindings = <&kp DELETE>;
+            key-positions = <15 14>;
+        };
     };
 
     macros {
