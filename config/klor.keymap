@@ -218,10 +218,10 @@
 
         figma_layer {
             bindings = <
-            &kp O      &kp LC(K)  &kp F      &kp P      &kp G                                 &trans  &trans          &kp UP_ARROW    &trans           &trans
-&kp ESCAPE  &kp LS(A)  &kp R      &kp S      &kp T      &kp D                                 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&kp TAB     &kp LC(Z)  &kp X      &kp C      &kp V      &kp B           &trans        &trans  &trans  &trans          &trans          &trans           &tog 8  &trans
-                                  &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans  &mo 9   &kp ENTER       &trans
+            &kp O      &kp W  &kp F      &kp P      &kp G                                 &trans  &trans          &kp UP_ARROW    &trans           &trans
+&kp ESCAPE  &kp A      &kp R  &kp S      &kp T      &kp D                                 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&kp TAB     &kp LC(Z)  &kp X  &kp C      &kp V      &kp B           &trans        &trans  &trans  &trans          &trans          &trans           &tog 8  &trans
+                              &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans  &mo 9   &kp ENTER       &trans
             >;
 
             label = "FIGMA";
