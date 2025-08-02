@@ -23,4 +23,5 @@
 
 &right_encoder {
 	status = "okay";
+	triggers-per-rotation = <10>;
 };
