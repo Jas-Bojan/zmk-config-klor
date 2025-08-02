@@ -24,5 +24,6 @@
 &right_encoder {
 	status = "okay";
 	steps = <6>; // One event per detent
+	debounce-interval-ms = <2>;
 
 };
