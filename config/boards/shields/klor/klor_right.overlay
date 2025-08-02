@@ -23,6 +23,6 @@
 
 &right_encoder {
 	status = "okay";
-	steps = <1>; // One event per detent
+	steps = <6>; // One event per detent
 
 };
