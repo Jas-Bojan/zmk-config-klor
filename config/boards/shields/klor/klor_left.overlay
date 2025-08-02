@@ -19,5 +19,6 @@
 
 &left_encoder {
 	status = "okay";
-	triggers-per-rotation = <10>;
+	steps = <1>; // One event per detent
+
 };
