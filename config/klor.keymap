@@ -110,7 +110,7 @@
                           &kp LCTRL  &lt 3 SPACE  &kp LEFT_SHIFT  &kp LEFT_WIN      &kp LEFT_ALT      &kp LC(LEFT_SHIFT)  &lt 2 ENTER  &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         mac_layer {
